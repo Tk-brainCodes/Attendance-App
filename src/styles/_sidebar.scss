@@ -29,6 +29,10 @@
     }
 }
 
+.dashboard a {
+    text-decoration: none;
+}
+
 .track, .analyze, .manage {
     display: flex;
     flex-direction: column;

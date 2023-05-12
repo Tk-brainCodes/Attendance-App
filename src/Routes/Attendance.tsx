@@ -1,3 +1,5 @@
+
+import Breadcrumb from "../Components/Breadcrumb"
 import Sidebar from "../Components/Sidebar"
 
 const Attendance = () => {
@@ -5,6 +7,7 @@ const Attendance = () => {
     <div className="attendance">
       <Sidebar />
       <h2>Attendance</h2>
+      <Breadcrumb />
     </div>
   )
 }
