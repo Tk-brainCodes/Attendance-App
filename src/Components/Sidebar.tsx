@@ -4,45 +4,55 @@ import logout from '../assets/icons/logout.svg'
 import report from '../assets/icons/report.svg'
 import spreadsheet from '../assets/icons/spreadsheet.svg'
 import student from '../assets/icons/student.svg'
+import absense from '../assets/icons/Absense.svg'
+import teacher from '../assets/icons/teacher.svg'
+import subject from '../assets/icons/subject.svg'
 
 const Sidebar = () => {
+    const analyse = [
+        {label: 'Attendance' , path: '/attendance' , icon: spreadsheet},
+        {label: 'Absense', path: '/absense', icon: absense},
+        {label: 'Report', path: '/report' , icon: report }
+    ]
+
+    const manage = [
+        {label: 'Teacher' , path: '/teacher' , icon: teacher},
+        {label: 'Student', path: '/student', icon: student},
+        {label: 'Subject', path: '/subject' , icon: subject }
+    ]
   return (
     <div className='sidebar'>
-        <div className='track'>
-            <h1>TRACK</h1>
-            <Link to='/'>
-                <div className='link'>
-                    <img src={spreadsheet} alt="spreadsheet" />
-                    <button>Attendance Sheet</button>
+        <div className="dashboard">
+            <Link to='/dashboard'>
+                <div className="link">
+                    <img src={chart} alt="" />
+                    <button>Dashboard</button>
                 </div>
             </Link>
+        </div>
+        <div className='track'>
+            <h1>ANALYSE</h1>
+            {analyse.map((item) => (
+                <Link to={item.path}>
+                    <div className='link'>
+                        <img src={item.icon} alt="spreadsheet" />
+                        <button>{item.label}</button>
+                    </div>
+                </Link>
+            ))}
         </div>
         <div className='analyze'>
-            <h1>ANALYZE</h1>
-            <div>
-                <Link to='/dashboard'>
-                    <div className='link'>
-                        <img src={chart} alt="chart" />
-                        <button>Dashboard</button>
-                    </div>
-                </Link>
-                <Link to='/report'>
-                    <div className='link'>
-                        <img src={report} alt="student" />
-                        <button>Report</button>
-                    </div>
-                </Link>
-            </div>
-        </div>
-        <div className='manage'>
             <h1>MANAGE</h1>
-            <Link to='/student'> 
-                <div className='link'>
-                    <img src={student} alt="student" />
-                    <button>Student</button>
-                </div>
-            </Link>
+            {manage.map((item) => (
+                <Link to={item.path}>
+                    <div className="link">
+                        <img src={item.icon} alt="" />
+                        <button>{item.label}</button>
+                    </div>
+                </Link>
+            ))}
         </div>
+        
         <div className='logout'>
             <img src={logout} alt="logout" />
             <h1>Logout</h1>
