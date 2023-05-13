@@ -4,7 +4,7 @@ import { Outlet } from "react-router";
 
 const Dashboard = () => {
   return (
-    <div className='grid grid-cols-2'>
+    <div>
       <Sidebar />
       <Outlet />
     </div>
