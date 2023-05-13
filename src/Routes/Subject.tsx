@@ -1,11 +1,9 @@
-import Sidebar from '../Components/Sidebar'
-
 const Subject = () => {
   return (
     <div>
-        <Sidebar />
+      <h1>Subjects</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Subject
+export default Subject;

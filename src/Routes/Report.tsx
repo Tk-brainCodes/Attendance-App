@@ -1,13 +1,12 @@
-import Breadcrumb from "../Components/Breadcrumb"
-import Sidebar from "../Components/Sidebar"
+import Breadcrumb from "../Components/Breadcrumb";
+
 const Report = () => {
   return (
     <div>
-      <Sidebar />
       <h1>Report</h1>
       <Breadcrumb />
     </div>
-  )
-}
+  );
+};
 
-export default Report
+export default Report;

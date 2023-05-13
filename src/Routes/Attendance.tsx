@@ -1,15 +1,12 @@
-
-import Breadcrumb from "../Components/Breadcrumb"
-import Sidebar from "../Components/Sidebar"
+import Breadcrumb from "../Components/Breadcrumb";
 
 const Attendance = () => {
   return (
-    <div className="attendance">
-      <Sidebar />
+    <div className=''>
       <h2>Attendance</h2>
       <Breadcrumb />
     </div>
-  )
-}
+  );
+};
 
-export default Attendance
+export default Attendance;
