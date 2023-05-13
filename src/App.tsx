@@ -1,5 +1,6 @@
 import Attendance from "./Routes/Attendance";
 import Login from "./Routes/Login";
+import DashboardLayout from "./Routes/DashboardLayout";
 import Dashboard from "./Routes/Dashboard";
 import Report from "./Routes/Report";
 import Student from "./Routes/Student";
@@ -17,8 +18,9 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path='/dashboard' element={<Dashboard />}>
+        <Route path='/login' element={<Login />} />
+        <Route path='/' element={<DashboardLayout />}>
+          <Route path='dashboard' element={<Dashboard />} />
           <Route path='attendance' element={<Attendance />} />
           <Route path='report' element={<Report />} />
           <Route path='student' element={<Student />} />
