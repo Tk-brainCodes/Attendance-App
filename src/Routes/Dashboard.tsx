@@ -8,12 +8,12 @@ const Dashboard = () => {
     <div>
       <div className='py-[2rem] px-[1rem] md:px-[4rem]'>
         <h1 className='text-2xl font-semibold text-[#4154F1]'>Dashboard</h1>
-        <p className='flex gap-2'>
+        <div className='flex gap-2'>
           <Link to={"/"}>Home</Link> /{" "}
           <span>
             <Breadcrumb />
           </span>
-        </p>
+        </div>
         <div className='lg:flex mt-[4rem] gap-[2rem]'>
           <div className='lg:w-[60%]'>
             <div className='grid sm:grid-cols-3 gap-[20px] w-[100%]'>

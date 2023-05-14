@@ -17,7 +17,7 @@ const Sidebar = () => {
       <div className='track'>
         <h1>ANALYSE</h1>
         {analyse.map((item) => (
-          <Link to={item.path}>
+          <Link to={item.path} key={item.label}>
             <div className='link'>
               <img src={item.icon} alt='spreadsheet' />
               <button>{item.label}</button>
@@ -28,7 +28,7 @@ const Sidebar = () => {
       <div className='analyze'>
         <h1>MANAGE</h1>
         {manage.map((item) => (
-          <Link to={item.path}>
+          <Link to={item.path} key={item.label}>
             <div className='link'>
               <img src={item.icon} alt='' />
               <button>{item.label}</button>

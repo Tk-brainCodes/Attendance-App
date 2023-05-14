@@ -22,3 +22,7 @@ export const absenseRecords = [
   {id: 2, name: 'Maria', course: 'CSC422', semester: 'Second', reason: 'Sick', time: '1day'},
   {id: 3, name: 'Maria', course: 'CSC413', semester: 'First', reason: 'Sick', time: '1day'}
 ]
+
+export const approvedAbsense = [
+  { id: 1, name: 'Sonia', course: 'CSC411', semester: 'First', reason: 'Sick', time: '1day' },
+]
