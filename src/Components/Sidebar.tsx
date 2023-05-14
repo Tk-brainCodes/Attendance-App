@@ -5,7 +5,7 @@ import { analyse, manage } from "./data";
 
 const Sidebar = () => {
   return (
-    <div className='sidebar'>
+    <div className='sidebar fixed'>
       <div className='dashboard'>
         <Link to='/dashboard'>
           <div className='link'>

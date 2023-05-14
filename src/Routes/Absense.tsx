@@ -35,7 +35,7 @@ const Absense = () => {
   
   
   return (
-   <div className='py-[2rem] px-[1rem] md:px-[4rem]'>
+   <div className='py-[2rem] px-[1rem] md:px-[4rem] '>
     <div>
       <h1 className='text-2xl font-semibold text-[#4154F1]'>Absense</h1>
       <div className='flex gap-2'>

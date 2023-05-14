@@ -5,7 +5,7 @@ const DashboardLayout = () => {
   return (
     <div className='flex'>
       <Sidebar />
-      <div className='w-[100%] mt-[8vh] bg-[#F0F4FB] min-h-[100vh]'>
+      <div className='w-[100%] mt-[8vh] bg-[#F0F4FB] min-h-[100vh] ml-[15vw]'>
         <Outlet />
       </div>
     </div>
