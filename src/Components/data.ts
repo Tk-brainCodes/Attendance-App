@@ -16,3 +16,13 @@ export const manage = [
   { label: "Student", path: "student", icon: student },
   { label: "Subject", path: "subject", icon: subject },
 ];
+
+export const absenseRecords = [
+  {id: 1, name: 'Maria', course: 'CSC411', semester: 'First', reason: 'Sick', time: '1day'},
+  {id: 2, name: 'Maria', course: 'CSC422', semester: 'Second', reason: 'Sick', time: '1day'},
+  {id: 3, name: 'Maria', course: 'CSC413', semester: 'First', reason: 'Sick', time: '1day'}
+]
+
+export const approvedAbsense = [
+  { id: 1, name: 'Sonia', course: 'CSC411', semester: 'First', reason: 'Sick', time: '1day' },
+]

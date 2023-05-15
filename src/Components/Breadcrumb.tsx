@@ -26,7 +26,7 @@ const Breadcrumb = () => {
   return (
     <div>
       <nav>
-        <ol>
+        <ul>
           {/* <li>
                 <Link to="/">TRACK</Link>
             </li> */}
@@ -35,7 +35,7 @@ const Breadcrumb = () => {
               <Link to={url}>{title}</Link>
             </li>
           ))}
-        </ol>
+        </ul>
       </nav>
     </div>
   );
