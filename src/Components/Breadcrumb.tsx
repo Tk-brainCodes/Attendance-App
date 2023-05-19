@@ -26,13 +26,13 @@ const Breadcrumb = () => {
   return (
     <div>
       <nav>
-        <ul>
+        <ul className="flex flex-row">
           {/* <li>
                 <Link to="/">TRACK</Link>
             </li> */}
           {breadcrumbs.map(({ title, url }) => (
             <li key={url} className="capitalize">
-              <Link to={url}>{title}</Link>
+              <Link to={url}>/{title}</Link>
             </li>
           ))}
         </ul>

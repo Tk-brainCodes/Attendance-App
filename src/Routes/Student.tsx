@@ -33,7 +33,7 @@ const Student = () => {
       <div className="mt-[3rem] p-6 bg-[#fff] rounded-[8px]">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-[#012970] font-medium text-[18px]">Current Teachers</h1>
+            <h1 className="text-[#012970] font-medium text-[18px]">Current Students</h1>
           </div>
           <div>
             <input 

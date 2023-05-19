@@ -28,8 +28,8 @@ const Subject = () => {
           </div>
         </div>
         <div>
-          <Link to='addteacher'>
-            <button className="bg-[#0D6EFD] rounded-[8px] text-[#fff] py-2 px-3 cursor-pointer">Add Student</button>
+          <Link to='addsubject'>
+            <button className="bg-[#0D6EFD] rounded-[8px] text-[#fff] py-2 px-3 cursor-pointer">Add Subject</button>
           </Link>
         </div>
       </div>
@@ -37,7 +37,7 @@ const Subject = () => {
       <div className="mt-[3rem] p-6 bg-[#fff] rounded-[8px]">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-[#012970] font-medium text-[18px]">Current Teachers</h1>
+            <h1 className="text-[#012970] font-medium text-[18px]">Current Subject</h1>
           </div>
           <div>
             <input 
