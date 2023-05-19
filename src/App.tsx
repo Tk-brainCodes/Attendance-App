@@ -12,6 +12,7 @@ import Absense from "./Routes/Absense";
 import Teacher from "./Routes/Teacher";
 import Subject from "./Routes/Subject";
 import "./App.css";
+import Addteacher from "./Components/Addteacher";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='absense' element={<Absense />} />
           <Route path='subject' element={<Subject />} />
           <Route path='teacher' element={<Teacher />} />
+          <Route path="addteacher" element={<Addteacher />} />
         </Route>
       </Routes>
     </div>
